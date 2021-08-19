@@ -1,0 +1,16 @@
+{
+  "name": "com.beatwaves.uniasynctest",
+  "version": "0.0.1",
+  "displayName": "UniAsyncTest",
+  "description": "Async test support for Unity",
+  "unity": "2019.4",
+  "keywords": [
+    "testing"
+  ],
+  "author": {
+    "name": "Sakari Bergen",
+    "email": "unity@beatwaves.net",
+    "url": "https://beatwaves.net"
+  },
+  "type": "tests"
+}
