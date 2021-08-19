@@ -24,7 +24,7 @@ namespace UniAsyncTest
 
             var proxyMethod = typeof(AsyncTestAttribute)
                 .GetMethod(nameof(AsyncMethodProxy), BindingFlags.Static | BindingFlags.Public);
-            var wrapper = new MethodWrapper(typeof(AsyncTestAttribute), proxyMethod);
+            var wrapper = new MethodWrapper(proxyMethod.DeclaringType, proxyMethod);
             suite.Method = wrapper;
 
             var testMethod = Builder.BuildTestMethod(wrapper, suite, parameters);
